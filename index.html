@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tmaz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">My Portfolio.</td>
+                <td id="navigation">
+                    <a href="#Projects">Projects</a>
+                    <a href="#bio">about</a>
+                    <a href="#blog">blog</a>
+                    <a href="#contact">contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Welcome to My Portfolio!</h1>
+                <p>
+            Hello! I'm Tawanda Maziriri, a passionate and dedicated web developer with a knack for creating engaging, user-friendly websites and web applications. I'm a novice in the industry. I specialize in both front-end and back-end development, ensuring seamless and responsive designs that bring ideas to life. I gained my experience through online bootcamps, mini projects, stakeoverflow, and other online materials. Find out more details about my journey press me!
+            </p>
+                <button class="btn_one">Hire Me</button><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i
+                                    class="fab fa-telegram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://x.com/tmaz263"><i
+                                    class="fab fa-twitter"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i
+                                    class="fab fa-instagram"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://github.com/Tmaziriri5"><i
+                                    class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="http://wa.me/+27719385540"><i
+                                    class="fab fa-whatsapp"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="projects">
+        <h1>projects</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://www.freecodecamp.org/news/content/images/2021/04/image-293.png">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp">
+            <img onclick="magnify($(this).attr('src'))"
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--8m6DOwsd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://lh3.googleusercontent.com/x4svx9o7SLFbIq14sUztxqwIKKU3wD1Wa0HsJtWv0LAErwWJ2V7kXmwC-kTHEVbiCQ1xPPd62MeKc9moWnCHF1K2gBX-HcyxeeamqgQ7vyxC3_w8Rpq27WMRBPjlifAk4x4ENSBG51P31pS0hQ">
+    
+        </div>
+    </div>
+    <div id="bio">
+        <h1>about</h1>
+        <p>
+           I am an enthusiastic web developer at the advanced beginner level, with a growing skill set in both frontend and backend development. My frontend expertise includes working with HTML, CSS, and JavaScript to create responsive and interactive web applications. I am also proficient in React, where I focus on building dynamic user interfaces.
+
+            On the backend, I am currently honing my skills in Node.js, expanding my understanding of server-side development. I also have entry-level experience with Python, which I'm using to explore various backend functionalities and scripting tasks. I am committed to continuous learning and eager to advance my knowledge and experience in full-stack development.
+        </p>
+        <p>
+            Beyond my technical capabilities, I possess strong management skills. These skills include effective task organization, project coordination, and team collaboration, which I’ve developed through various roles and experiences outside of web development. I am committed to continuous learning and eager to advance my knowledge and experience in both web development and leadership. Additionally, I possess legal expertise from my undergraduate major, which helped me in understanding backend web topics surrounding cyber security. This gave me an insight on how it is important to manage client's data in order to avoid data breach from black-hat hackers. 
+        <p>
+            Overall, the world of Web development is a journey I'm currently tackling at an advanced beginnner level of proficiency. I compare this journey to my favourite hobby, golf, in which one can never claim to have fully mastered, even at professional level. It's only dedication, time, and persistancy which seperates mediocrity to the very best!
+        </p>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; +27 (71) 938-5540</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; tmaziriri5@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Lynnwood Manor,<br>
+                                        Pretoria,<br>
+                                        South Africa
+                                    </div>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="socialicons">    
+                                    <a class="social"><i class="fab fa-telegram"></i></a>
+                                    <a class="social" href="https://x.com/tmaz263"><i class="fab fa-twitter"></i></a>
+                                    <a class="social"><i class="fab fa-instagram"></i></a>
+                                    <a class="social" href="https://github.com/Tmaziriri5"><i class="fab fa-github"></i></a>
+                                    <a class="social" href="http://wa.me/+27719385540"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                        <script src="script.js"></script>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        made on earth by T1 <br> <a href="#">T1</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
